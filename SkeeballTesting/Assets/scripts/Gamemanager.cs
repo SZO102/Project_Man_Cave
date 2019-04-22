@@ -6,7 +6,7 @@ public class Gamemanager : MonoBehaviour
 {
     // Start is called before the first frame update
     public int score;
-   
+    public int tries;
     void Start()
     {
        
