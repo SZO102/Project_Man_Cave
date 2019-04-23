@@ -21,7 +21,12 @@ public class Skeeball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (tries == 0)
+        {
+            GetComponent<Gamemanager>().tries += 3;
+            GetComponent<Gamemanager>().score = 0;
+
+        }
     }
     public void OnCollisionEnter(Collision collision)// on collision ball should instantiate then destroy itself
     {
@@ -54,6 +59,7 @@ public class Skeeball : MonoBehaviour
             Destroy(this.gameObject);// destroys ball
             
         }
+        
     }
 
 

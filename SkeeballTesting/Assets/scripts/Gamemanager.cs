@@ -15,9 +15,14 @@ public class Gamemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (tries == 0)
+        {
+            GetComponent<Gamemanager>().tries += 3;
+            GetComponent<Gamemanager>().score = 0;
+
+        }
     }
-    
+  
    
 
 
